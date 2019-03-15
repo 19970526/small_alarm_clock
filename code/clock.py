@@ -5,10 +5,7 @@ import winsound
 
 
 def stop(interval):
-    start_time = time.time()
     time.sleep(int(interval))
-    end_time = time.time()
-    return end_time - start_time
     
 
 def ring(set_time):
@@ -18,7 +15,7 @@ def ring(set_time):
         
         # 如果时间到就响铃
         if ring_time == set_time:
-            winsound.PlaySound(r'..\matter\music.wav', winsound.SND_NODEFAULT)
+            winsound.PlaySound(r'..\matter\alarm.wav', winsound.SND_NODEFAULT)
 
         
 if __name__ == '__main__':
